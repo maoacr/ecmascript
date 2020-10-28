@@ -79,3 +79,26 @@ obj = { name: name, age: age};
 //ES6
 obj2 = { name, age };
 console.log(obj2);
+
+//Arrow Functions
+
+const names = [
+  { name: 'Mario',age: '27' },
+  { name : 'Tina', age: '5' }
+]
+
+let listOfNames = name.map(function(item) {
+  console.log(item.name)
+})
+
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfName3 = (name, age, country) => {
+  //Todo nuestro codigo
+}
+
+const listOfName4 = name => {
+  //Mi bloque de codigo
+}
+
+const square = num => num * num;
