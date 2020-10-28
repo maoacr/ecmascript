@@ -35,4 +35,18 @@ console.log(epicPhrase2);
 let saltosDeLinea = `Ahora solo basta con un enter y
 tendremos nuesra nueva linea de texto sin más.`
 
+//Destructuración
+
+let person = {
+  'name': 'Mario',
+  'age': '27',
+  'country': 'COL'
+}
+//Before ES6
+console.log(person.name, person.age, person.country)
+
+//After ES6
+let { age, country } = person;
+console.log( age, country);
+
 // Var , Let, Const 
