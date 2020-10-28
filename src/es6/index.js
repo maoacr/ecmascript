@@ -72,3 +72,10 @@ console.log(globalVar);
 const a = 'b';
 a = 'a'; //Error  - No reasignable
 
+let name = 'Mario';
+let age = '27';
+//ES5
+obj = { name: name, age: age};
+//ES6
+obj2 = { name, age };
+console.log(obj2);
