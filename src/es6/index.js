@@ -49,4 +49,16 @@ console.log(person.name, person.age, person.country)
 let { age, country } = person;
 console.log( age, country);
 
+
+// Spread Opertor | Operador de propagación
+
+let team1 = ['Mario', 'Juan', 'Valeria'];
+let team2 = ['Tina', 'Manu', 'Yura'];
+
+let education = ['David', ...team1, ...team2];
+console.log(education);
+
+
+
+
 // Var , Let, Const 
