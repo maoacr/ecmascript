@@ -86,11 +86,12 @@ const names = [
   { name: 'Mario',age: '27' },
   { name : 'Tina', age: '5' }
 ]
-
+//Before ES6
 let listOfNames = name.map(function(item) {
   console.log(item.name)
 })
 
+//After ES6
 let listOfNames2 = names.map(item => console.log(item.name));
 
 const listOfName3 = (name, age, country) => {
@@ -102,3 +103,23 @@ const listOfName4 = name => {
 }
 
 const square = num => num * num;
+
+
+//Promesas
+
+const helloPromise = () => {
+  return new Promise((resolve, reject) => {
+    if(false) {
+      resolve('Hey !, todo salio bien')
+    } else {
+      reject('Ups !!');
+    }
+  });
+}
+
+helloPromise()
+.then(response => console.log(response))
+.catch(error => console.log(error));
+
+//Clases
+
