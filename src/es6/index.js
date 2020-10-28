@@ -55,10 +55,20 @@ console.log( age, country);
 let team1 = ['Mario', 'Juan', 'Valeria'];
 let team2 = ['Tina', 'Manu', 'Yura'];
 
+//After ES6
 let education = ['David', ...team1, ...team2];
 console.log(education);
 
-
-
-
 // Var , Let, Const 
+{
+  var globalVar = 'Global Var';
+}
+{
+  let globalLet = 'Global Let';
+  console.log(globalLet);
+}
+console.log(globalVar);
+
+const a = 'b';
+a = 'a'; //Error  - No reasignable
+
