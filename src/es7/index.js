@@ -12,3 +12,10 @@ const validate = (i) => {
 
 validate(2);
 validate(6);
+
+ // Elevar a las potencia
+
+ let base = 4;
+ let exponent = 3;
+ let result = base ** exponent;
+ console.log(result);
