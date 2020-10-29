@@ -47,6 +47,8 @@ const helloAsync = async() => {
 
 helloAsync();
 
+// Manenjo de la promesa con try & catch dentro de nuestro Async function
+
 const anotherFunction = async () => {
   try {
     const hello = await helloWorld();
